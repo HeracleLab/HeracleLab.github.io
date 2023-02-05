@@ -1,0 +1,14 @@
+{
+  "name": "756450202308f916",
+  "main": "756450202308f916@1251.js",
+  "version": "1251.0.0",
+  "homepage": "https://observablehq.com/d/756450202308f916",
+  "author": {
+    "name": "Salvatore Monteleone",
+    "url": "https://observablehq.com/@6b65a261ff8b56c5"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4 - 5"
+  }
+}

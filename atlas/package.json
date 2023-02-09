@@ -1,11 +1,11 @@
 {
-  "name": "756450202308f916",
-  "main": "756450202308f916@1376.js",
-  "version": "1376.0.0",
-  "homepage": "https://observablehq.com/d/756450202308f916",
+  "name": "a2d05833dcdb7cf8",
+  "main": "a2d05833dcdb7cf8@1381.js",
+  "version": "1381.0.0",
+  "homepage": "https://observablehq.com/d/a2d05833dcdb7cf8",
   "author": {
-    "name": "Salvatore Monteleone",
-    "url": "https://observablehq.com/@6b65a261ff8b56c5"
+    "name": "Pietro Oliva",
+    "url": "https://observablehq.com/@pietro-oliva"
   },
   "type": "module",
   "peerDependencies": {

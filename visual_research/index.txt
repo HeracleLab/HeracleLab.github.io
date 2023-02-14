@@ -1,0 +1,48 @@
+* Visual search task
+
++ History
+
+Research on searching for items in a search display goes back to the
+work of @http://en.wikipedia.org/wiki/Anne_Treisman Anne Treisman@ in
+the late 1970s. One of the important ideas of searching for features
+with specific items (e.g., searching for a green round bottle among a
+large collection of bottles) is that this cannot be done in parallel;
+hence, the more items there are to search through, the longer it
+takes. 
+
+Searching for specific combinations of features in items (e.g., the
+ROUND GREEN bottle amongst bottles of all sorts of colors and shapes)
+is known as <i>conjunctive</i> search. The increase in conjunctive
+search time due to the numbers present is known as the <i>search
+slope</i>.
+
++ Example
+
+In this example, you need to respond to the letter T, but only if it
+is in it's regular upright position and only if it is orange. You
+respond with the space bar (and do not do anything if no T is
+present). There are 50 search displays, and the task takes around 5
+minutes to complete. In each display, there are 5, 10, 15, or 20
+items. Search time increases with large numbers of items on the
+screen.
+
+$ search
+
++ Download PsyToolkit implementations
+
+@search-r.zip Working example of R code to analyze data@
+
+@search.zip PsyToolkit code and stimuli@
+
++ Links
+
+@http://en.wikipedia.org/wiki/Visual_search Visual search on wikipedia@
+
++ Further reading
+
+Treisman, A. (1977). Focussed attention in the perception and
+retrieval of multidimensional stimuli. Perception and Psychophysics,
+9, 40-50.
+
+Treisman, A., & Gelade, G. (1980). A feature integration theory of
+attention. Cognitive Psychology, 12, 97-136.

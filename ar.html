@@ -17,9 +17,12 @@
     <script src='libs/landing-page.js'></script>
 </head>
 <body>
-<a-scene embedded arjs='sourceType: webcam; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'
+<a-scene 
+         xrextras-gesture-detector
+         xrextras-loading
+         xrextras-runtime-error
+         embedded arjs='sourceType: webcam; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'
          renderer='precision: medium;'
-         xrweb="allowedDevices: any"
          id="scene">
 
     <a-assets id="assets">

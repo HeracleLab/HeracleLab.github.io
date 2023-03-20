@@ -6,18 +6,22 @@
     <link rel="stylesheet" href="style.css" />
 
     <script src="libs/aframe-master.min.js"></script>
-    <script src="libs/AR.js"></script>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    <script src="gesture-detector.js"></script>
+    <script src="gesture-handler.js"></script>
+
+<!--     <script src="libs/AR.js"></script>
     <script src="libs/rotate.js"></script>
     <script src="libs/scale.js"></script> 
     <script src="libs/gesture-detector.js"></script>
-<!--     <script src="libs/8frame-1.3.0.min.js"></script>
+    <script src="libs/8frame-1.3.0.min.js"></script>
     <script src='libs/landing-page.js'></script> -->
 </head>
 <body>
 <a-scene gesture-detector    
          embedded arjs='sourceType: webcam; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'
          renderer='precision: medium;'
-   <!--        vr-mode-ui="enabled: false"  -->
          id="scene">
 
     <a-assets id="assets">
@@ -36,7 +40,13 @@
         <a-asset-item id="corteccia-motoria_gangli-della-base_lobo-parietale_polo-frontale" src="models/corteccia-motoria_gangli-della-base_lobo-parietale_polo-frontale.gltf"></a-asset-item>
     </a-assets>
 
-    <a-marker type="barcode" value="0">
+    <a-marker
+        raycaster="objects: .clickable"
+        emitevents="true"
+        cursor="fuse: false; rayOrigin: mouse;"
+        id="markerA"
+        type="barcode" value="0"
+       >
         <a-entity id="amigdala-model" gltf-model="#amigdala-asset" rotation="-90 180 180" scale="0.025 0.025 0.025" class="clickable"
       gesture-handler="minScale: 0.25; maxScale: 10"></a-entity>
     </a-marker>

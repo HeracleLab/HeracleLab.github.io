@@ -19,21 +19,57 @@
          id="scene">
 
     <a-assets id="assets">
+       <a-asset-item id="area-di-broca_polo-frontale-asset" src="models/area-di-broca_polo-frontale.gltf"></a-asset-item>
+       <a-asset-item id="area-di-wernicke_polo-temporale-asset" src="models/area-di-wernicke_polo-temporale.gltf"></a-asset-item>
+       <a-asset-item id="area-di-broca_area-di-wernicke-asset" src="models/area-di-broca_area-di-wernicke.gltf"></a-asset-item> 
       <!--      <a-asset-item id="amigdala-asset" src="models/amigdala.gltf"></a-asset-item>
-        <a-asset-item id="area-di-broca-asset" src="models/area-di-broca.gltf"></a-asset-item>
-        <a-asset-item id="area-di-broca_area-di-wernicke" src="models/area-di-broca_area-di-wernicke.gltf"></a-asset-item> 
-        <a-asset-item id="area-di-wernicke-asset" src="models/area-di-wernicke.gltf"></a-asset-item>
         <a-asset-item id="ippocampo-asset" src="models/ippocampo.gltf"></a-asset-item>
-        <a-asset-item id="lobo-parietale-asset" src="models/lobo-parietale.gltf"></a-asset-item> -->
+        <a-asset-item id="lobo-parietale-asset" src="models/lobo-parietale.gltf"></a-asset-item>
         <a-asset-item id="polo-frontale-asset" src="models/polo-frontale.gltf"></a-asset-item>
         <a-asset-item id="polo-occipitale-asset" src="models/polo-occipitale.gltf"></a-asset-item>
         <a-asset-item id="polo-temporale-asset" src="models/polo-temporale.gltf"></a-asset-item>  
         <a-asset-item id="gangli-della-base-asset" src="models/gangli-della-base.gltf"></a-asset-item> 
-  <!--      <a-asset-item id="polo-frontale_polo-temporale" src="models/polo-frontale_polo-temporale.gltf"></a-asset-item>
+        <a-asset-item id="polo-frontale_polo-temporale" src="models/polo-frontale_polo-temporale.gltf"></a-asset-item>
         <a-asset-item id="corteccia-motoria" src="models/corteccia-motoria.gltf"></a-asset-item>
         <a-asset-item id="corteccia-motoria_gangli-della-base_lobo-parietale_polo-frontale" src="models/corteccia-motoria_gangli-della-base_lobo-parietale_polo-frontale.gltf"></a-asset-item> -->
     </a-assets>
-
+    
+       
+    <a-marker
+        raycaster="objects: .clickable"
+        emitevents="true"
+        cursor="fuse: false; rayOrigin: mouse;"
+        id="area-di-broca_polo-frontale-model"
+        type="barcode" value="1"
+       >
+        <a-entity id="area-di-broca_polo-frontale-model" gltf-model="#area-di-broca_polo-frontale-asset" rotation="-90 180 180" scale="0.025 0.025 0.025" class="clickable"
+      gesture-handler="minScale: 0.25; maxScale: 10"></a-entity>
+    </a-marker>
+    
+    
+        <a-marker
+        raycaster="objects: .clickable"
+        emitevents="true"
+        cursor="fuse: false; rayOrigin: mouse;"
+        id="area-di-broca_area-di-wernicke-model"
+        type="barcode" value="9"
+        >
+         <a-entity id="area-di-broca_area-di-wernicke-model" gltf-model="#area-di-broca_area-di-wernicke-asset" rotation="-90 180 180" scale="0.025 0.025 0.025" class="clickable"
+      gesture-handler="minScale: 0.25; maxScale: 10"></a-entity>
+    </a-marker>
+    
+            <a-marker
+        raycaster="objects: .clickable"
+        emitevents="true"
+        cursor="fuse: false; rayOrigin: mouse;"
+        id="area-di-wernicke_polo-temporale-model"
+        type="barcode" value="9"
+        >
+         <a-entity id="area-di-wernicke_polo-temporale-model" gltf-model="#area-di-wernicke_polo-temporale-asset" rotation="-90 180 180" scale="0.025 0.025 0.025" class="clickable"
+      gesture-handler="minScale: 0.25; maxScale: 10"></a-entity>
+    </a-marker>
+   
+    
  <!--   
     <a-marker
         raycaster="objects: .clickable"
@@ -46,30 +82,8 @@
       gesture-handler="minScale: 0.25; maxScale: 10"></a-entity>
     </a-marker>
     
-      
-   
-    <a-marker
-        raycaster="objects: .clickable"
-        emitevents="true"
-        cursor="fuse: false; rayOrigin: mouse;"
-        id="area-di-broca-model"
-        type="barcode" value="1"
-       >
-        <a-entity id="area-di-broca-model" gltf-model="#area-di-broca-asset" rotation="-90 180 180" scale="0.025 0.025 0.025" class="clickable"
-      gesture-handler="minScale: 0.25; maxScale: 10"></a-entity>
-    </a-marker>
-    
 
-    <a-marker
-        raycaster="objects: .clickable"
-        emitevents="true"
-        cursor="fuse: false; rayOrigin: mouse;"
-        id="area-di-broca_area-di-wernicke"
-        type="barcode" value="9"
-        >
-         <a-entity id="area-di-broca_area-di-wernicke" gltf-model="#area-di-broca_area-di-wernicke" rotation="-90 180 180" scale="0.025 0.025 0.025" class="clickable"
-      gesture-handler="minScale: 0.25; maxScale: 10"></a-entity>
-    </a-marker>
+
 
     <a-marker
         raycaster="objects: .clickable"
@@ -104,7 +118,6 @@
       gesture-handler="minScale: 0.25; maxScale: 10"></a-entity>
     </a-marker>
 
--->
     
     <a-marker
         raycaster="objects: .clickable"
@@ -153,7 +166,7 @@
       gesture-handler="minScale: 0.25; maxScale: 10"></a-entity>
     </a-marker>
     
- <!--   
+  
     <a-marker
         raycaster="objects: .clickable"
         emitevents="true"

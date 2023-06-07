@@ -22,17 +22,6 @@
         <a-asset-item id="ippocampo-asset" src="models/ippocampo.gltf"></a-asset-item>
         <a-asset-item id="amigdala-asset" src="models/amigdala.gltf"></a-asset-item>
         <a-asset-item id="amigdala_ippocampo-asset" src="models/amigdala_ippocampo.gltf"></a-asset-item>
-     <!--   
-        <a-asset-item id="area-di-broca-asset" src="models/area-di-broca.gltf"></a-asset-item>
-        <a-asset-item id="area-di-wernicke-asset" src="models/area-di-wernicke.gltf"></a-asset-item>
-        <a-asset-item id="lobo-parietale-asset" src="models/lobo-parietale.gltf"></a-asset-item>
-        <a-asset-item id="polo-frontale-asset" src="models/polo-frontale.gltf"></a-asset-item>
-        <a-asset-item id="polo-occipitale-asset" src="models/polo-occipitale.gltf"></a-asset-item>
-        <a-asset-item id="polo-temporale-asset" src="models/polo-temporale.gltf"></a-asset-item>  
-        <a-asset-item id="area-di-broca_area-di-wernicke" src="models/area-di-broca_area-di-wernicke.gltf"></a-asset-item>  
-        <a-asset-item id="polo-frontale_polo-temporale" src="models/polo-frontale_polo-temporale.gltf"></a-asset-item>
-        <a-asset-item id="corteccia-motoria" src="models/corteccia-motoria.gltf"></a-asset-item>
-        <a-asset-item id="corteccia-motoria_gangli-della-base_lobo-parietale_polo-frontale" src="models/corteccia-motoria_gangli-della-base_lobo-parietale_polo-frontale.gltf"></a-asset-item> -->
     </a-assets>
 
         <a-marker
@@ -42,8 +31,9 @@
         id="amigdala-model"
         type="barcode" value="0"
        >
-        <a-entity id="amigdala-model" gltf-model="#amigdala-asset" rotation="-90 180 180" scale="0.025 0.025 0.025" class="clickable"
-      gesture-handler="minScale: 0.25; maxScale: 10"></a-entity>
+<!--   <a-entity id="amigdala-model" gltf-model="#amigdala-asset" rotation="-90 180 180" scale="0.025 0.025 0.025" class="clickable"
+      gesture-handler="minScale: 0.25; maxScale: 10"></a-entity> -->
+      <a-entity id="amigdala-model" gltf-model="#amigdala-asset" rotation="-90 180 180" scale="0.025 0.025 0.025"></a-entity>
     </a-marker>
     
 
@@ -54,8 +44,9 @@
         id="ippocampo-model"
         type="barcode" value="3"
         >
-         <a-entity id="ippocampo-model" gltf-model="#ippocampo-asset" rotation="-90 180 180" scale="0.025 0.025 0.025" class="clickable"
-      gesture-handler="minScale: 0.25; maxScale: 10"></a-entity>
+<!--  <a-entity id="ippocampo-model" gltf-model="#ippocampo-asset" rotation="-90 180 180" scale="0.025 0.025 0.025" class="clickable"
+      gesture-handler="minScale: 0.25; maxScale: 10"></a-entity> -->
+   <a-entity id="ippocampo-model" gltf-model="#ippocampo-asset" rotation="-90 180 180" scale="0.025 0.025 0.025"></a-entity>
     </a-marker>
     
         <a-marker
@@ -65,125 +56,12 @@
         id="amigdala_ippocampo-model"
         type="barcode" value="8"
         >
-         <a-entity id="amigdala_ippocampo-model" gltf-model="#amigdala_ippocampo-asset" rotation="-90 180 180" scale="0.025 0.025 0.025" class="clickable"
-      gesture-handler="minScale: 0.25; maxScale: 10"></a-entity>
+<!--  <a-entity id="amigdala_ippocampo-model" gltf-model="#amigdala_ippocampo-asset" rotation="-90 180 180" scale="0.025 0.025 0.025" class="clickable"
+      gesture-handler="minScale: 0.25; maxScale: 10"></a-entity> -->
+    <a-entity id="amigdala_ippocampo-model" gltf-model="#amigdala_ippocampo-asset" rotation="-90 180 180" scale="0.025 0.025 0.025"></a-entity>
     </a-marker>
     
- <!--   
-
-
-    <a-marker
-        raycaster="objects: .clickable"
-        emitevents="true"
-        cursor="fuse: false; rayOrigin: mouse;"
-        id="area-di-broca-model"
-        type="barcode" value="1"
-       >
-        <a-entity id="area-di-broca-model" gltf-model="#area-di-broca-asset" rotation="-90 180 180" scale="0.025 0.025 0.025" class="clickable"
-      gesture-handler="minScale: 0.25; maxScale: 10"></a-entity>
-    </a-marker>
-
-    <a-marker
-        raycaster="objects: .clickable"
-        emitevents="true"
-        cursor="fuse: false; rayOrigin: mouse;"
-        id="area-di-wernicke-model"
-        type="barcode" value="2"
-        >
-         <a-entity id="area-di-wernicke-model" gltf-model="#area-di-wernicke-asset" rotation="-90 180 180" scale="0.025 0.025 0.025" class="clickable"
-      gesture-handler="minScale: 0.25; maxScale: 10"></a-entity>
-    </a-marker>
-
-
-    <a-marker
-        raycaster="objects: .clickable"
-        emitevents="true"
-        cursor="fuse: false; rayOrigin: mouse;"
-        id="lobo-parietale-model"
-        type="barcode" value="4"
-        >
-         <a-entity id="lobo-parietale-model" gltf-model="#lobo-parietale-asset" rotation="-90 180 180" scale="0.025 0.025 0.025" class="clickable"
-      gesture-handler="minScale: 0.25; maxScale: 10"></a-entity>
-    </a-marker>
-
-    <a-marker
-        raycaster="objects: .clickable"
-        emitevents="true"
-        cursor="fuse: false; rayOrigin: mouse;"
-        id="polo-frontale-model"
-        type="barcode" value="5"
-        >
-         <a-entity id="polo-frontale-model" gltf-model="#polo-frontale-asset" rotation="-90 180 180" scale="0.025 0.025 0.025" class="clickable"
-      gesture-handler="minScale: 0.25; maxScale: 10"></a-entity>
-    </a-marker>
-
-    <a-marker
-        raycaster="objects: .clickable"
-        emitevents="true"
-        cursor="fuse: false; rayOrigin: mouse;"
-        id="polo-occipitale-model"
-        type="barcode" value="6"
-        >
-         <a-entity id="polo-occipitale-model" gltf-model="#polo-occipitale-asset" rotation="-90 180 180" scale="0.025 0.025 0.025" class="clickable"
-      gesture-handler="minScale: 0.25; maxScale: 10"></a-entity>
-    </a-marker>
-
-    <a-marker
-        raycaster="objects: .clickable"
-        emitevents="true"
-        cursor="fuse: false; rayOrigin: mouse;"
-        id="polo-temporale-model"
-        type="barcode" value="7"
-        >
-         <a-entity id="polo-temporale-model" gltf-model="#polo-temporale-asset" rotation="-90 180 180" scale="0.025 0.025 0.025" class="clickable"
-      gesture-handler="minScale: 0.25; maxScale: 10"></a-entity>
-    </a-marker>
-    
-    <a-marker
-        raycaster="objects: .clickable"
-        emitevents="true"
-        cursor="fuse: false; rayOrigin: mouse;"
-        id="area-di-broca_area-di-wernicke"
-        type="barcode" value="9"
-        >
-         <a-entity id="area-di-broca_area-di-wernicke" gltf-model="#area-di-broca_area-di-wernicke" rotation="-90 180 180" scale="0.025 0.025 0.025" class="clickable"
-      gesture-handler="minScale: 0.25; maxScale: 10"></a-entity>
-    </a-marker>
-    
-    <a-marker
-        raycaster="objects: .clickable"
-        emitevents="true"
-        cursor="fuse: false; rayOrigin: mouse;"
-        id="polo-frontale_polo-temporale"
-        type="barcode" value="10"
-        >
-         <a-entity id="polo-frontale_polo-temporale" gltf-model="#polo-frontale_polo-temporale" rotation="-90 180 180" scale="0.025 0.025 0.025" class="clickable"
-      gesture-handler="minScale: 0.25; maxScale: 10"></a-entity>
-    </a-marker>
-    
-    <a-marker 
-        raycaster="objects: .clickable"
-        emitevents="true"
-        cursor="fuse: false; rayOrigin: mouse;"
-        id="corteccia-motoria"        
-        type="barcode" value="11"
-        >
-         <a-entity id="corteccia-motoria" gltf-model="#corteccia-motoria" rotation="-90 180 180" scale="0.025 0.025 0.025" class="clickable"
-      gesture-handler="minScale: 0.25; maxScale: 10"></a-entity>
-    </a-marker>
-
-    <a-marker
-        raycaster="objects: .clickable"
-        emitevents="true"
-        cursor="fuse: false; rayOrigin: mouse;"
-        id="corteccia-motoria_gangli-della-base_lobo-parietale_polo-frontale"   
-        type="barcode" value="12"
-        >
-         <a-entity id="corteccia-motoria_gangli-della-base_lobo-parietale_polo-frontale" gltf-model="#corteccia-motoria_gangli-della-base_lobo-parietale_polo-frontale" rotation="-90 180 180" scale="0.025 0.025 0.025" class="clickable"
-      gesture-handler="minScale: 0.25; maxScale: 10"></a-entity>
-    </a-marker>
-    -->
-     
+ 
     <a-entity camera></a-entity>
 
     <script src="ar.js"></script>
